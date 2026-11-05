@@ -1,0 +1,326 @@
+/* ==========================================================================
+   RESET & VARIÁVEIS DE CORES (Paleta Base: Céu de Supercélula)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-lightest: #12DCDC;    /* Tom mais claro e vibrante para o Header */
+    --color-light: #36B7B7;       /* Tom intermediário claro */
+    --color-medium: #53A8A8;      /* Tom de destaque / acento */
+    --color-deep: #7DA5A5;        /* Azul esverdeado profundo */
+    --color-dark: #768989;        /* Tom mais fechado da paleta */
+    
+    --bg-white: #FFFFFF;          /* Fundo das letras / caixas */
+    --text-dark: #112222;         /* Texto principal de alta legibilidade */
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--text-dark); /* Fundo geral escuro */
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGAÇÃO
+   ========================================================================== */
+.site-header {
+    background-color: var(--color-lightest);
+    color: var(--text-dark);
+    padding: 3rem 2rem 2rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.credibility-badge {
+    display: inline-block;
+    background-color: rgba(17, 34, 34, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.site-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.header-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Barra inferior do header: Botões 50/50 simétricos */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 0.75rem;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nav-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-btn:hover {
+    background-color: var(--text-dark);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   WRAPPER DA PÁGINA & IMAGEM DE FUNDO NAS LATERAIS
+   ========================================================================== */
+.page-wrapper {
+    position: relative;
+    background-image: url('../assets/img/placeholder-side-blur.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   BODY & CONTEÚDO PRINCIPAL (Largura de 1100px)
+   ========================================================================== */
+.main-content {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.content-section {
+    padding: 5rem 4rem;
+    background-color: var(--bg-white);
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    color: var(--color-deep);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    position: relative;
+}
+
+/* Efeito Parallax fixo para imagens separadoras usando a estrutura <picture> e responsiva */
+.parallax-divider {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.4);
+}
+
+.parallax-divider picture,
+.parallax-divider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+/* Caixa responsiva para a lista de equipamentos e parâmetros */
+.equipment-box {
+    background-color: var(--color-deep);
+    color: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 10px 25px rgba(125, 165, 165, 0.25);
+}
+
+.equipment-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.equipment-list li {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.equipment-list li strong {
+    color: var(--color-lightest);
+}
+
+.equipment-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Destaque leve em palavras-chave usando a cor da paleta */
+.content-section strong {
+    color: var(--color-medium);
+}
+
+/* Tooltip interativo com z-index alto para nunca ser cortado */
+.tooltip-trigger {
+    color: var(--color-deep);
+    border-bottom: 2px dashed var(--color-deep);
+    cursor: help;
+    position: relative;
+    font-weight: 700;
+}
+
+.tooltip-trigger:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text-dark);
+    color: var(--bg-white);
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    width: 280px;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+/* Seções de promoção interna para os sites 2 e 3 */
+.promo-section {
+    background-color: #f4f8f8;
+    border-left: 5px solid var(--color-medium);
+    margin: 2rem 0;
+    border-radius: 0 12px 12px 0;
+}
+
+.inline-link {
+    color: var(--color-deep);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-deep);
+    transition: color 0.2s;
+}
+
+.inline-link:hover {
+    color: var(--color-lightest);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+    position: relative;
+    background-color: var(--text-dark);
+    color: var(--bg-white);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 0;
+    z-index: 10;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    color: var(--color-lightest);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.credits-box {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 2.5rem 1rem 1.5rem 1rem;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .content-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .parallax-divider {
+        height: 350px;
+    }
+
+    .parallax-divider img {
+        background-attachment: scroll;
+    }
+}

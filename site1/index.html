@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça a Meteorologia | Projeto Weather</title>
+    <!-- Vinculação da folha de estilos modularizada -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!-- HEADER: Barra de navegação e título principal -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Conheça a Meteorologia</h1>
+            <p class="header-subtitle">A ciência por trás das tempestades</p>
+            
+            <!-- Badge de credibilidade (Comentado até a conclusão do fact-check) -->
+            <!-- <span class="credibility-badge">Revisão Técnica: Meteorologistas de SP</span> -->
+        </div>
+        
+        <!-- Navegação inferior do header ocupando 50/50 simetricamente -->
+        <nav class="header-nav">
+            <a href="../site2-eventos/index.html" class="nav-btn">Conheça os Eventos Climáticos</a>
+            <a href="../site3-nuvens/index.html" class="nav-btn">Conheça as Nuvens</a>
+        </nav>
+    </header>
+
+    <!-- WRAPPER GLOBAL PARA APLICAR A IMAGEM DE FUNDO NAS LATERAIS -->
+    <div class="page-wrapper">
+        <!-- BODY: Conteúdo principal conectado diretamente ao header -->
+        <main class="main-content">
+
+            <!-- Início: Conceito Geral para curiosos -->
+            <section class="content-section" id="conceito-geral">
+                <h2>O Que é a Meteorologia?</h2>
+                <p>
+                    A meteorologia não é apenas a previsão do tempo que passa na TV; é a ciência exata que estuda a atmosfera terrestre e como ela interage com o nosso planeta. Muito baseada em física e matemática, ela decodifica a energia do <span class="tooltip-trigger" data-tooltip="A radiação solar é o motor térmico primário que movimenta toda a dinâmica e circulação da atmosfera terrestre.">Sol</span>, a pressão do ar e a umidade para entender o comportamento dinâmico do céu. 
+                </p>
+                <p>
+                    Para quem olha de fora, pode parecer um universo cheio de fórmulas complexas, mas o seu propósito no dia a dia é simples: antecipar os movimentos da natureza para proteger vidas e conectar você à grandiosidade do nosso ecossistema.
+                </p>
+            </section>
+
+            <!-- Imagem de transição / Respiro visual com suporte a imagem responsiva (Picture element) -->
+            <div class="parallax-divider" role="img" aria-label="Céu nublado e dinâmico">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../assets/img/placeholder-sky1-small.jpg">
+                    <img src="../assets/img/placeholder-sky1.jpg" alt="Céu nublado e dinâmico">
+                </picture>
+            </div>
+
+            <!-- Meio 1: Formação das Nuvens e Dinâmica Básica -->
+            <section class="content-section" id="formacao-nuvens">
+                <h2>Como o Céu Funciona?</h2>
+                <p>
+                    Tudo começa com o aquecimento solar. O sol aquece o solo, que por sua vez esquenta o ar logo acima dele. Como o <span class="tooltip-trigger" data-tooltip="Parcelas de ar aquecido tornam-se menos densas que o ambiente ao redor, gerando empuxo para cima (convecção).">ar quente</span> é mais leve, ele começa a subir, carregando umidade invisível. 
+                </p>
+                <p>
+                    Conforme ganha altitude, a temperatura cai, fazendo essa umidade se condensar em gotículas visíveis. É aí que o espetáculo começa a ganhar forma, transformando vapor em imensas estruturas atmosféricas.
+                </p>
+            </section>
+
+            <!-- Imagem de transição com suporte a imagem responsiva -->
+            <div class="parallax-divider" role="img" aria-label="Radar meteorológico operando">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../assets/img/placeholder-radar-small.jpg">
+                    <img src="../assets/img/placeholder-radar.jpg" alt="Radar meteorológico operando">
+                </picture>
+            </div>
+
+            <!-- Meio 2: Previsões, Meteorologistas e Equipamentos -->
+            <section class="content-section" id="previsoes-equipamentos">
+                <h2>A Engenharia da Previsão</h2>
+                <p>
+                    Prever o tempo exige inteligência humana e tecnologia de ponta. É aqui que entram os profissionais da área e os centros de monitoramento espalhados pelo Brasil — como o <strong>INMET</strong> em âmbito nacional, o <strong>CGE</strong> em São Paulo e o <strong>SIMEPAR</strong> no Paraná —, que analisam dados em tempo real para emitir alertas e compreender o comportamento regional da atmosfera.
+                </p>
+                <p>
+                    Para capturar dados detalhados da atmosfera em campo, utiliza-se um arsenal de alta precisão tecnológica:
+                </p>
+
+                <!-- Lista responsiva de equipamentos científicos -->
+                <div class="equipment-box">
+                    <ul class="equipment-list">
+                        <li><strong>Torre de Radar:</strong> Equipamento responsável por disparar ondas de rádio e detectar a presença e a intensidade de precipitações e estruturas convectivas em um raio de até 200 km.</li>
+                        <li><strong>Balão Meteorológico:</strong> Sondas lançadas diariamente na atmosfera para medir temperatura, umidade e pressão em camadas elevadas onde os aviões voam.</li>
+                        <li><strong>Satélites Meteorológicos:</strong> Olhos no espaço que monitoram o deslocamento de grandes frentes frias, tempestades e o comportamento global dos ventos em tempo real.</li>
+                        <li><strong>Estações Meteorológicas:</strong> Conjuntos de sensores terrestres que registram de forma contínua a temperatura, direção do vento, índice pluviométrico e pressão local.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Imagem de transição com suporte a imagem responsiva -->
+            <div class="parallax-divider" role="img" aria-label="Supercélula com cisalhamento visível">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../assets/img/placeholder-storm-small.jpg">
+                    <img src="../assets/img/placeholder-storm.jpg" alt="Supercélula com cisalhamento visível">
+                </picture>
+            </div>
+
+            <!-- Meio 3: Aspectos Profissionais (A Ciência dos Dados em formato de lista) -->
+            <section class="content-section" id="termos-tecnicos">
+                <h2>A Ciência dos Dados</h2>
+                <p>
+                    Quando olhamos para tempestades severas, precisamos entender os motores invisíveis e os parâmetros físicos que moldam a atmosfera:
+                </p>
+
+                <!-- Caixa de lista formatada para os parâmetros da ciência de dados -->
+                <div class="equipment-box">
+                    <ul class="equipment-list">
+                        <li><strong>Temperatura:</strong> <span class="tooltip-trigger-inline" data-tooltip="Grau de agitação térmica do ar, determinante para o gradiente de energia da troposfera.">Grau de agitação térmica do ar</span>, determinante para o gradiente de energia da troposfera.</li>
+                        <li><strong>Ponto de Orvalho:</strong> Temperatura na qual o vapor de água presente no ar se condensa em líquido; indica diretamente o teor de umidade disponível.</li>
+                        <li><strong>Pressão Atmosférica:</strong> O peso exercido pela coluna de ar sobre a superfície, fundamental para identificar centros de alta e baixa pressão.</li>
+                        <li><strong>CAPE:</strong> Energia Potencial Convectiva Disponível; o combustível em forma de calor e umidade acumulada que alimenta a ascensão rápida das tempestades.</li>
+                        <li><strong>Cisalhamento:</strong> Mudança abrupta na velocidade e/ou na direção do vento em diferentes níveis de altitude da atmosfera.</li>
+                        <li><strong>Helicidade:</strong> Medida da rotação tridimensional disponível no vento em camadas baixas, essencial para o desenvolvimento de mesociclones.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Imagem de transição com suporte a imagem responsiva -->
+            <div class="parallax-divider" role="img" aria-label="Tornado ou nuvem funil dramática">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../assets/img/placeholder-funil-small.jpg">
+                    <img src="../assets/img/placeholder-funil.jpg" alt="Tornado ou nuvem funil dramática">
+                </picture>
+            </div>
+
+            <!-- Meio 4: Marketing para o Site 2 (Eventos Severos) -->
+            <section class="content-section promo-section" id="promo-eventos">
+                <h2>A Dinâmica dos Extremos Atmosféricos</h2>
+                <p>
+                    Compreender a física por trás da atmosfera revela como o equilíbrio térmico pode dar lugar a fenômenos de grande impacto. Quando os índices de instabilidade se elevam, formam-se estruturas capazes de produzir ventanias intensas e rajadas destrutivas. <a href="../site2-eventos/index.html" class="inline-link">Conheça mais sobre os eventos severos</a> e descubra a mecânica por trás dos fenômenos mais extremos do planeta.
+                </p>
+            </section>
+
+            <!-- Meio 5: Marketing para o Site 3 (Tipos de Nuvens) -->
+            <section class="content-section promo-section" id="promo-nuvens">
+                <h2>Olhe Para Cima</h2>
+                <p>
+                    O céu está o tempo todo conversando com a gente através de formas, cores e texturas. Cada estrutura no horizonte carrega consigo uma história de como se formou e onde vai parar. Quer aprender a indentificar a diferença entre um Cumulus inofensivo e uma Cumulonimbus carregada, direto da sua janela? <a href="../site3-nuvens/index.html" class="inline-link">Conheça mais sobre as nuvens</a> e mude para sempre a forma como você enxerga o horizonte.
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- FOOTER: Conclusões, redes e créditos modulares -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Conectando você à dinâmica do céu</p>
+            
+            <div class="footer-links">
+                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub do Projeto</a>
+                <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener">Instagram</a>
+            </div>
+
+            <!-- Bloco modular de créditos (fácil expansão futura para revisores) -->
+            <div class="credits-box">
+                <p>Criado por <strong>Nícolas Souza</strong></p>
+                <!-- Bloco reservado para futuros revisores técnicos -->
+                <!-- <p class="reviewer-credit">Revisão Científica: [Nome do Meteorologista]</p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
