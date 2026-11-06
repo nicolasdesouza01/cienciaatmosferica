@@ -110,7 +110,7 @@ body {
 .page-wrapper {
     position: relative;
     background-color: var(--text-dark);
-    background-image: url('../assets/img/placeholder-side-blur.jpg');
+    background-image: url('../imagem/imagemdefundo.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
