@@ -221,7 +221,9 @@ body {
 }
 
 .tooltip-trigger:hover::after,
-.tooltip-trigger-inline:hover::after {
+.tooltip-trigger:focus::after,
+.tooltip-trigger-inline:hover::after,
+.tooltip-trigger-inline:focus::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 135%;
