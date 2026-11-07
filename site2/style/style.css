@@ -129,7 +129,7 @@ body {
 }
 .inline-link:hover { color: var(--c-ink); border-bottom-color: var(--c-ink); }
 
-/* Aviso "(i)" */
+/* Aviso com ícone redondo de informação */
 .info {
   display: flex;
   align-items: center;
@@ -202,7 +202,7 @@ body {
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
-.g-list label:hover { background-color: var(--c-line); }
+.g-list label:hover { background-color: #D9DBE3; }
 .g-list small { font-weight: 400; font-size: 0.75rem; opacity: 0.8; }
 
 /* Item ativo */
@@ -228,8 +228,6 @@ body {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 6px;
-  padding-left: 4px;
-  padding-right: 4px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 .g-view figcaption { margin-top: 0.8rem; font-size: 1rem; }
