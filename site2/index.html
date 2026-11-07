@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça os Eventos Severos | Projeto Weather</title>
+  <meta name="description" content="Tornados, vendavais, granizo e ciclones: entenda como nascem os eventos severos e por que eles também acontecem no Brasil.">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Conheça os Eventos Severos</h1>
+      <p class="header-subtitle">Quando a atmosfera sai do equilíbrio</p>
+    </div>
+    <nav class="header-nav">
+      <a href="../site1/index.html" class="nav-btn">Conheça a Meteorologia</a>
+      <a href="../site3/index.html" class="nav-btn">Conheça as Nuvens</a>
+    </nav>
+    <!-- Índice: links para cada seção -->
+    <nav class="toc" aria-label="Índice da página">
+      <a href="#tornados">Tornados</a>
+      <a href="#vendaval">Vendaval e Microburst</a>
+      <a href="#granizo">Granizo</a>
+      <a href="#ciclones">Ciclones</a>
+      <a href="#protecao">Como se proteger</a>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+
+      <!-- DIV 1: TORNADOS -->
+      <section class="content-section" id="tornados">
+        <h2>Tornados: mais comuns no Brasil do que parece</h2>
+
+        <h3>Eles existem aqui</h3>
+        <p>Durante muito tempo, o tornado foi tratado como coisa de filme americano. Não é. O Brasil registra tornados todos os anos, principalmente no Sul e em partes do Sudeste e do Centro-Oeste, e pesquisadores o colocam entre os países com mais ocorrências do mundo. <!-- CONFERIR: posição do Brasil no ranking e fonte --></p>
+        <p>A explicação está na geografia. A leste dos Andes, o terreno é plano e aberto: de um lado chega o ar quente e úmido vindo da Amazônia, do outro avança o ar frio do sul. Quando essas massas se encontram, sobre a região entre Argentina, Paraguai, Uruguai e Sul do Brasil, nascem as <span class="tip" tabindex="0" data-tooltip="Tempestade com uma corrente de ar ascendente em rotação. É o tipo de tempestade que gera os tornados mais fortes.">supercélulas</span>. É uma das áreas do planeta mais favoráveis a esse fenômeno.</p>
+        <p>A maioria dos tornados é fraca e dura poucos minutos, por isso muita gente nunca soube que viu um. Mas alguns são devastadores: em 2015, um tornado atingiu Xanxerê (SC) e destruiu parte da cidade. <!-- CONFERIR: data, intensidade e número de vítimas --></p>
+
+        <h3>Como um tornado se forma</h3>
+        <ol class="steps">
+          <li>O ar quente e úmido perto do chão, com ar frio e seco acima, cria <span class="tip" tabindex="0" data-tooltip="Situação em que o ar aquecido sobe com facilidade, alimentando tempestades fortes.">instabilidade</span>.</li>
+          <li>O <span class="tip" tabindex="0" data-tooltip="Mudança do vento em velocidade e direção conforme a altura.">cisalhamento</span> faz o vento girar como um rolo deitado, na horizontal.</li>
+          <li>A corrente ascendente da tempestade levanta esse rolo e o coloca na vertical: nasce o <span class="tip" tabindex="0" data-tooltip="Coluna de ar em rotação dentro da tempestade, com alguns quilômetros de largura.">mesociclone</span>.</li>
+          <li>Se a rotação se concentra e se estica até o solo, o funil toca o chão e passa a ser um tornado.</li>
+        </ol>
+        <p>Nem todo mesociclone gera um tornado, e é por isso que os meteorologistas acompanham tudo pelo radar. Para entender os termos técnicos, conheça a <a href="../site1/index.html" class="inline-link">meteorologia</a> e a <a href="../site1/index.html#termos-tecnicos" class="inline-link">ciência de dados</a>.</p>
+
+        <h3>Os tipos de tornado</h3>
+        <p class="info">Você pode clicar no nome para ver uma foto desse tipo de tornado.</p>
+
+        <div class="gallery">
+          <input type="radio" name="tornado" id="t1" checked>
+          <input type="radio" name="tornado" id="t2">
+          <input type="radio" name="tornado" id="t3">
+          <input type="radio" name="tornado" id="t4">
+          <input type="radio" name="tornado" id="t5">
+          <input type="radio" name="tornado" id="t6">
+          <input type="radio" name="tornado" id="t7">
+          <input type="radio" name="tornado" id="t8">
+
+          <div class="g-list">
+            <label for="t1">Cone <small>formato</small></label>
+            <label for="t2">Corda <small>formato</small></label>
+            <label for="t3">Cunha <small>formato</small></label>
+            <label for="t4">Multivortex <small>formato</small></label>
+            <label for="t5">Supercelular <small>origem</small></label>
+            <label for="t6">Landspout <small>origem</small></label>
+            <label for="t7">Tromba d'água <small>origem</small></label>
+            <label for="t8">Envolto pela chuva <small>visibilidade</small></label>
+          </div>
+
+          <div class="g-view">
+            <figure class="p1"><img src="imagem/tornado-cone.jpg" alt="Tornado em forma de cone tocando o solo"><figcaption><strong>Cone.</strong> Funil largo no alto e estreito embaixo: a imagem clássica do tornado.</figcaption></figure>
+            <figure class="p2"><img src="imagem/tornado-corda.jpg" alt="Tornado fino e sinuoso, em forma de corda" loading="lazy"><figcaption><strong>Corda.</strong> Fino e sinuoso, costuma aparecer na fase final, quando o tornado se enfraquece.</figcaption></figure>
+            <figure class="p3"><img src="imagem/tornado-cunha.jpg" alt="Tornado largo em forma de cunha" loading="lazy"><figcaption><strong>Cunha.</strong> Mais largo do que alto, parece uma parede escura. Costuma estar ligado a tornados intensos.</figcaption></figure>
+            <figure class="p4"><img src="imagem/tornado-multivortex.jpg" alt="Tornado com vários vórtices menores girando" loading="lazy"><figcaption><strong>Multivortex.</strong> Vários vórtices menores giram em torno de um centro comum.</figcaption></figure>
+            <figure class="p5"><img src="imagem/tornado-supercelular.jpg" alt="Tornado saindo de uma supercélula" loading="lazy"><figcaption><strong>Supercelular.</strong> Nasce do mesociclone de uma supercélula e dá origem aos tornados mais fortes.</figcaption></figure>
+            <figure class="p6"><img src="imagem/tornado-landspout.jpg" alt="Landspout sob uma nuvem em crescimento" loading="lazy"><figcaption><strong>Landspout.</strong> Forma-se sem mesociclone, sob nuvens em crescimento. Costuma ser fraco e de curta duração.</figcaption></figure>
+            <figure class="p7"><img src="imagem/tornado-trombadagua.jpg" alt="Tromba d'água sobre o mar" loading="lazy"><figcaption><strong>Tromba d'água.</strong> Um tornado sobre a água. Algumas são fracas, outras nascem de tempestades severas.</figcaption></figure>
+            <figure class="p8"><img src="imagem/tornado-chuva.jpg" alt="Tornado escondido por uma cortina de chuva" loading="lazy"><figcaption><strong>Envolto pela chuva.</strong> A chuva esconde o funil. É um dos mais perigosos, porque não se vê chegando.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao1-small.jpg">
+          <img src="imagem/divisao1.jpg" alt="Tornado destruindo uma área rural">
+        </picture>
+      </div>
+
+      <!-- DIV 2: VENDAVAL + MICROBURST -->
+      <section class="content-section" id="vendaval">
+        <h2>Vendaval e Microburst: os ventos fortes das tempestades</h2>
+        <p>Vendaval é o nome dado ao vento forte o bastante para destelhar casas e derrubar árvores. Quase sempre vem de tempestades e é um dos eventos que mais geram prejuízo por aqui. <!-- CONFERIR: dado sobre frequência/prejuízos no Brasil --></p>
+        <p>Uma das causas é o <span class="tip" tabindex="0" data-tooltip="Em inglês, microburst. É uma rajada de ar frio que desce da tempestade, atinge o solo e se espalha para os lados.">microburst</span>: o ar frio e pesado da tempestade despenca, bate no chão e se abre em todas as direções. Dura poucos minutos, atinge uma área pequena e o vento pode passar de 100 km/h.</p>
+        <p>Como saber se foi tornado ou microburst? Basta olhar os destroços. No tornado, eles caem em direções cruzadas, como se puxados para o centro. No microburst, são jogados para fora, em leque, a partir de um ponto.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao2-small.jpg">
+          <img src="imagem/divisao2.jpg" alt="Árvores derrubadas após um vendaval">
+        </picture>
+      </div>
+
+      <!-- DIV 3: GRANIZO -->
+      <section class="content-section" id="granizo">
+        <h2>Granizo: pedras de gelo que caem do céu</h2>
+        <p>O granizo nasce dentro de tempestades fortes, onde a <span class="tip" tabindex="0" data-tooltip="Corrente de ar que sobe dentro da tempestade. Quanto mais forte, maior a pedra de gelo que ela consegue sustentar.">corrente ascendente</span> leva gotas de água até altitudes onde elas congelam. A pedra sobe e desce várias vezes, ganha camadas de gelo e cresce até ficar pesada demais para ser sustentada.</p>
+        <p>Cai com mais frequência no Sul e no Sudeste e causa perdas em lavouras, telhados e carros. O tamanho muda tudo, e comparar com objetos do dia a dia ajuda a entender o impacto. <!-- CONFERIR: regiões e dados de prejuízo --></p>
+        <p class="info">Passe o mouse ou toque no nome para ver o que cada tamanho pode causar.</p>
+
+        <div class="dark-box">
+          <ul class="hail">
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Granizo fraco. Costuma assustar pelo barulho, mas raramente causa dano.">Ervilha</span><b>cerca de 0,6 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Já machuca a pele e pode danificar plantas mais frágeis.">Bolinha de gude</span><b>cerca de 1,5 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="A partir de cerca de 2,5 cm o granizo costuma ser considerado severo. Pode quebrar telhas fracas e amassar carros.">Moeda de 1 real</span><b>cerca de 2,7 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Quebra vidros e telhas e danifica carros e lavouras.">Bola de golfe</span><b>cerca de 4,5 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Danos graves em telhados e veículos e risco real de ferimentos em pessoas e animais.">Bola de tênis</span><b>cerca de 6,5 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Granizo raro e muito perigoso, capaz de causar ferimentos graves.">Laranja</span><b>cerca de 8 cm</b></li>
+            <li><span class="tip tip-dark" tabindex="0" data-tooltip="Granizo gigante, muito raro, capaz de causar ferimentos graves e danos estruturais.">Toranja</span><b>10 cm ou mais</b></li>
+          </ul>
+        </div>
+        <!-- CONFERIR: medidas numa escala oficial (NWS ou TORRO) e a classificação de granizo severo -->
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao3-small.jpg">
+          <img src="imagem/divisao3.jpg" alt="Pedras de granizo cobrindo o chão">
+        </picture>
+      </div>
+
+      <!-- DIV 4: CICLONES -->
+      <section class="content-section" id="ciclones">
+        <h2>Ciclones e Furacões: a atmosfera em grande escala</h2>
+        <h3>O que é um ciclone</h3>
+        <p>Ciclone é um sistema de baixa pressão com ventos girando em torno do centro, no sentido horário no Hemisfério Sul. Enquanto uma tempestade tem alguns quilômetros, um ciclone tem centenas ou milhares.</p>
+        <p>Há dois grandes tipos. O <strong>tropical</strong> nasce sobre oceanos quentes, ganha energia do calor do mar e tem um olho calmo no centro. O <strong>extratropical</strong> nasce do contraste entre ar frio e ar quente, em latitudes mais altas, e é o mais comum no Sul do Brasil. Quando se intensifica muito rápido, passa pela <span class="tip" tabindex="0" data-tooltip="Queda muito rápida da pressão no centro do ciclone, que faz os ventos aumentarem de força em pouco tempo. Também é chamada de ciclone bomba.">ciclogênese explosiva</span>.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao4-small.jpg">
+          <img src="imagem/divisao4.jpg" alt="Ciclone visto do espaço">
+        </picture>
+      </div>
+
+      <section class="content-section">
+        <h3>Furacão, tufão ou ciclone: é a mesma coisa?</h3>
+        <p>No caso dos ciclones tropicais, sim: é o mesmo fenômeno com nomes diferentes. O nome muda conforme a região: <strong>furacão</strong> no Atlântico e no Pacífico Nordeste, <strong>tufão</strong> no Pacífico Noroeste e <strong>ciclone</strong> no Índico e no Pacífico Sul. A força é medida pela <span class="tip" tabindex="0" data-tooltip="Classificação de 1 a 5 baseada na velocidade do vento. Quanto maior a categoria, maior o potencial de destruição.">escala Saffir-Simpson</span>.</p>
+        <h3>Casos que ficaram na história</h3>
+        <div class="cards">
+          <div class="card"><h4>Catarina (2004)</h4><p>Atingiu o litoral de Santa Catarina com ventos de furacão. Foi raríssimo, porque o Atlântico Sul quase não forma furacões. <!-- CONFERIR: data e intensidade --></p></div>
+          <div class="card"><h4>Katrina (2005)</h4><p>Atingiu Nova Orleans, nos EUA, e causou uma das maiores tragédias do país, em grande parte pelas inundações. <!-- CONFERIR --></p></div>
+          <div class="card"><h4>Haiyan (2013)</h4><p>Um dos tufões mais fortes já registrados ao tocar a terra, devastou regiões das Filipinas. <!-- CONFERIR --></p></div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao5-small.jpg">
+          <img src="imagem/divisao5.jpg" alt="Olho de um furacão visto do alto">
+        </picture>
+      </div>
+
+      <!-- DIV 5: COMO SE PROTEGER -->
+      <section class="content-section" id="protecao">
+        <h2>Como se proteger</h2>
+        <p>Entender os eventos severos é o primeiro passo para estar preparado. Estas são orientações gerais; siga sempre as recomendações da Defesa Civil da sua cidade. <!-- CONFERIR: todas as orientações com a Defesa Civil e o INMET --></p>
+        <div class="cards">
+          <div class="card"><h4>Tornado</h4><p>Procure abrigo em construção resistente, no andar mais baixo, em um cômodo interno e sem janelas. Evite carros, casas móveis e viadutos.</p></div>
+          <div class="card"><h4>Vendaval</h4><p>Fique longe de árvores, postes e fios. Não se abrigue sob estruturas frágeis, como galpões e toldos.</p></div>
+          <div class="card"><h4>Granizo</h4><p>Entre em local coberto e afaste-se de janelas e claraboias. Proteja o carro em garagem.</p></div>
+          <div class="card"><h4>Ciclone</h4><p>Acompanhe os alertas, evite o litoral e fuja de áreas sujeitas a alagamento e deslizamento.</p></div>
+        </div>
+        <p class="info">Defesa Civil: 199 · Bombeiros: 193 · Alerta por SMS: 40199 <!-- CONFERIR os números --></p>
+      </section>
+
+      <section class="content-section more-sites">
+        <h2>Continue explorando</h2>
+        <div class="header-nav">
+          <a href="../site1/index.html" class="nav-btn">Conheça a Meteorologia</a>
+          <a href="../site3/index.html" class="nav-btn">Conheça as Nuvens</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Conectando você à dinâmica do céu</p>
+      <div class="footer-links">
+        <a href="https://github.com/nicolasdesouza01" target="_blank" rel="noopener">Meu GitHub</a>
+      </div>
+      <div class="credits-box">
+        <p>Criado por <strong>Nicolas Souza</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
