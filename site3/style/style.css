@@ -213,8 +213,18 @@ body {
 .reading li:last-child { border-bottom: none; }
 .reading b { color: var(--c-gold); flex: 0 0 11rem; }
 
-.more-sites { background-color: var(--c-bg); }
-.more-sites .header-nav { background-color: rgba(0, 0, 0, 0.06); }
+.more-sites .header-nav {
+  background-color: transparent;
+  padding: 0;
+}
+.more-sites .nav-btn {
+  background-color: var(--c-navy);
+  color: var(--c-white);
+}
+.more-sites .nav-btn:hover {
+  background-color: var(--c-gold);
+  color: var(--c-navy);
+}
 
 /* ==========================================================
    GALERIA INTERATIVA (só CSS: radio + label)

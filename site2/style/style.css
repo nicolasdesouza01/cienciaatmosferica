@@ -272,8 +272,20 @@ body {
   border-radius: 0 0 12px 12px;
 }
 .card p { font-size: 1rem !important; margin-bottom: 0 !important; }
-.more-sites { background-color: var(--c-bg); }
-.more-sites .header-nav { background-color: rgba(0, 0, 0, 0.06); }
+
+
+.more-sites .header-nav {
+  background-color: transparent;
+  padding: 0;
+}
+.more-sites .nav-btn {
+  background-color: var(--c-ink);
+  color: var(--c-white);
+}
+.more-sites .nav-btn:hover {
+  background-color: var(--c-accent-light);
+  color: var(--c-ink);
+}
 
 /* ==========================================================
    BALÕES (tooltips)
