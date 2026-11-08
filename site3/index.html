@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça as Nuvens | Projeto Weather</title>
+  <meta name="description" content="Como as nuvens se formam, como são classificadas pela OMM e como identificar cada tipo, do solo ao satélite.">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Conheça as Nuvens</h1>
+      <p class="header-subtitle">Classificação e identificação das nuvens</p>
+    </div>
+    <nav class="header-nav">
+      <a href="../site1/index.html" class="nav-btn">Conheça a Meteorologia</a>
+      <a href="../site2/index.html" class="nav-btn">Conheça os Eventos Severos</a>
+    </nav>
+    <nav class="toc" aria-label="Índice da página">
+      <a href="#o-que-e">O que é uma nuvem</a>
+      <a href="#nomes">Os nomes</a>
+      <a href="#tipos">Os dez gêneros</a>
+      <a href="#cumulonimbus">Cumulonimbus</a>
+      <a href="#identificar">Como identificar</a>
+    </nav>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+
+      <!-- DIV 1: O QUE É UMA NUVEM -->
+      <section class="content-section" id="o-que-e">
+        <h2>O que é uma nuvem e como ela se forma</h2>
+        <p>Uma nuvem é um conjunto visível de gotículas de água ou cristais de gelo suspensos na atmosfera. Cada gotícula mede cerca de 0,01 mm de diâmetro, pequena o bastante para ser mantida no ar pelas correntes verticais. <!-- CONFERIR: tamanho típico das gotículas --></p>
+        <p>O processo começa quando uma massa de ar sobe e se resfria. O ar frio comporta menos vapor de água; ao atingir o <span class="tip" tabindex="0" data-tooltip="Temperatura em que o ar fica saturado e o vapor de água começa a se condensar.">ponto de orvalho</span>, o vapor passa por <span class="tip" tabindex="0" data-tooltip="Passagem do vapor de água para o estado líquido, que ocorre quando o ar esfria até o ponto de orvalho.">condensação</span>. Para isso, porém, ele precisa de superfícies: as gotículas se formam ao redor dos <span class="tip" tabindex="0" data-tooltip="Partículas minúsculas suspensas no ar, como sal marinho, poeira e fuligem, que servem de base para a formação das gotículas.">núcleos de condensação</span>.</p>
+        <p>O ar sobe por três caminhos principais: o aquecimento do solo, o encontro entre massas de ar de temperaturas diferentes e o relevo, que obriga o ar a subir as montanhas. O modo como ele sobe define o formato da nuvem: colunas isoladas de ar quente geram nuvens de crescimento vertical, enquanto elevações lentas em grandes áreas geram camadas extensas. Para entender o aquecimento e a subida do ar, veja <a href="../site1/index.html#formacao-nuvens" class="inline-link">Como o Céu Funciona</a>.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao1-small.jpg">
+          <img src="imagem/divisao1.jpg" alt="Céu com nuvens variadas ao entardecer" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 2: COMO LER O NOME -->
+      <section class="content-section" id="nomes">
+        <h2>Como ler o nome de uma nuvem</h2>
+        <p>Os nomes dos dez gêneros de nuvens seguem o Atlas Internacional de Nuvens, publicado pela <span class="tip" tabindex="0" data-tooltip="Organização Meteorológica Mundial, agência da ONU que padroniza a observação e a classificação do tempo no mundo.">OMM</span>. São combinações de radicais do latim, e cada um descreve a altura ou o aspecto da nuvem. Conhecer os cinco radicais abaixo permite interpretar o nome de qualquer gênero.</p>
+
+        <div class="cards">
+          <div class="card"><h4>Cirro-</h4><p><em>cirrus</em>: mecha de cabelo. Nuvem alta, fibrosa e formada por cristais de gelo.</p></div>
+          <div class="card"><h4>Alto-</h4><p>Vem de <em>altus</em> (alto), mas na classificação indica nuvem de nível médio.</p></div>
+          <div class="card"><h4>Strato-</h4><p><em>stratus</em>: camada estendida. Nuvem em camada, sem contornos individuais.</p></div>
+          <div class="card"><h4>Cumulo-</h4><p><em>cumulus</em>: pilha, amontoado. Nuvem em massas isoladas, com crescimento vertical.</p></div>
+          <div class="card"><h4>Nimbo-</h4><p><em>nimbus</em>: chuva. Nuvem que produz precipitação.</p></div>
+        </div>
+
+        <h3>Exemplos de leitura</h3>
+        <div class="dark-box">
+          <ul class="reading">
+            <li><b>Nimbostratus</b><span>nimbo (chuva) + stratus (camada): camada espessa que produz chuva.</span></li>
+            <li><b>Cumulonimbus</b><span>cumulo (pilha) + nimbus (chuva): nuvem de grande crescimento vertical, capaz de produzir precipitação intensa.</span></li>
+            <li><b>Cirrocumulus</b><span>cirro (alta) + cumulus (amontoado): nuvem alta formada por pequenos flocos.</span></li>
+            <li><b>Altostratus</b><span>alto (nível médio) + stratus (camada): camada de nível médio.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao2-small.jpg">
+          <img src="imagem/divisao2.jpg" alt="Camada de nuvens vista de cima, em voo" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 3: CLASSIFICAÇÃO POR ALTITUDE -->
+      <section class="content-section" id="tipos">
+        <h2>Classificação das nuvens por altitude</h2>
+        <p>A OMM reconhece dez <span class="tip" tabindex="0" data-tooltip="Nível principal da classificação das nuvens, como cirrus ou cumulus. Cada gênero se divide em espécies e variedades.">gêneros</span> de nuvens, agrupados conforme a altura da base. As faixas são aproximadas e variam com a latitude: as altas têm base acima de cerca de 6 km e são formadas por cristais de gelo; as médias, entre 2 e 7 km em latitudes médias, podem conter água e gelo; as baixas, até 2 km, são formadas quase sempre por água líquida. As de desenvolvimento vertical atravessam todos esses níveis. <!-- Fonte: Atlas OMM / INMET --></p>
+        <p class="info">Clique no nome de uma nuvem para ver a foto, as características e o que ela costuma indicar.</p>
+
+        <div class="gallery">
+          <input type="radio" name="nuvem" id="t1" checked>
+          <input type="radio" name="nuvem" id="t2">
+          <input type="radio" name="nuvem" id="t3">
+          <input type="radio" name="nuvem" id="t4">
+          <input type="radio" name="nuvem" id="t5">
+          <input type="radio" name="nuvem" id="t6">
+          <input type="radio" name="nuvem" id="t7">
+          <input type="radio" name="nuvem" id="t8">
+          <input type="radio" name="nuvem" id="t9">
+          <input type="radio" name="nuvem" id="t10">
+
+          <div class="g-list">
+            <p class="g-title">Altas</p>
+            <label for="t1">Cirrus <small>Ci</small></label>
+            <label for="t2">Cirrocumulus <small>Cc</small></label>
+            <label for="t3">Cirrostratus <small>Cs</small></label>
+            <p class="g-title">Médias</p>
+            <label for="t4">Altocumulus <small>Ac</small></label>
+            <label for="t5">Altostratus <small>As</small></label>
+            <p class="g-title">Baixas</p>
+            <label for="t6">Stratus <small>St</small></label>
+            <label for="t7">Stratocumulus <small>Sc</small></label>
+            <label for="t8">Nimbostratus <small>Ns</small></label>
+            <p class="g-title">Desenvolvimento vertical</p>
+            <label for="t9">Cumulus <small>Cu</small></label>
+            <label for="t10">Cumulonimbus <small>Cb</small></label>
+          </div>
+
+          <div class="g-view">
+            <figure class="p1"><img src="imagem/nuvem-cirrus.jpg" alt="Nuvens Cirrus: filamentos finos e brancos em céu azul"><figcaption>
+              <h4>Cirrus <span class="sigla">Ci</span></h4>
+              <p>Filamentos finos e brancos, formados por cristais de gelo, que lembram fios de cabelo ou penas. Não produzem precipitação.</p>
+              <p class="indica"><strong>Indica:</strong> tempo estável; quando se tornam mais frequentes e espessas, podem anteceder a chegada de uma <span class="tip" tabindex="0" data-tooltip="Zona de transição entre duas massas de ar com temperaturas diferentes. Sua passagem costuma mudar o tempo.">frente</span>.</p>
+            </figcaption></figure>
+
+            <figure class="p2"><img src="imagem/nuvem-cirrocumulus.jpg" alt="Nuvens Cirrocumulus: pequenos flocos brancos em padrão de escamas" loading="lazy"><figcaption>
+              <h4>Cirrocumulus <span class="sigla">Cc</span></h4>
+              <p>Camada fina de pequenos flocos ou ondulações brancas, sem sombra própria, em padrão que lembra escamas. É uma das nuvens altas menos comuns e costuma durar pouco.</p>
+              <p class="indica"><strong>Indica:</strong> umidade em altitude, sem precipitação associada. <!-- CONFERIR: o que indica --></p>
+            </figcaption></figure>
+
+            <figure class="p3"><img src="imagem/nuvem-cirrostratus.jpg" alt="Nuvens Cirrostratus: véu fino cobrindo o céu, com halo ao redor do Sol" loading="lazy"><figcaption>
+              <h4>Cirrostratus <span class="sigla">Cs</span></h4>
+              <p>Véu fino e transparente de cristais de gelo que cobre parte ou todo o céu. Pode produzir <span class="tip" tabindex="0" data-tooltip="Anel luminoso em volta do Sol ou da Lua, formado pela refração da luz nos cristais de gelo da nuvem.">halos</span> ao redor do Sol ou da Lua.</p>
+              <p class="indica"><strong>Indica:</strong> frequentemente antecede a chegada de um sistema frontal.</p>
+            </figcaption></figure>
+
+            <figure class="p4"><img src="imagem/nuvem-altocumulus.jpg" alt="Nuvens Altocumulus: grupos de nuvens arredondadas em camadas" loading="lazy"><figcaption>
+              <h4>Altocumulus <span class="sigla">Ac</span></h4>
+              <p>Camadas ou grupos de nuvens brancas ou cinzentas, com partes arredondadas em forma de bolas ou rolos e sombras visíveis. Podem ter água e gelo.</p>
+              <p class="indica"><strong>Indica:</strong> <span class="tip" tabindex="0" data-tooltip="Condição em que o ar que sobe continua subindo, favorecendo nuvens de grande desenvolvimento vertical.">instabilidade</span> em níveis médios; pode anteceder a chegada de frentes.</p>
+            </figcaption></figure>
+
+            <figure class="p5"><img src="imagem/nuvem-altostratus.jpg" alt="Nuvens Altostratus: camada cinza uniforme cobrindo o céu" loading="lazy"><figcaption>
+              <h4>Altostratus <span class="sigla">As</span></h4>
+              <p>Camada cinza ou azulada, uniforme, que cobre o céu. O Sol aparece como um disco difuso, sem halo, como se visto através de vidro fosco.</p>
+              <p class="indica"><strong>Indica:</strong> frequentemente antecede <span class="tip" tabindex="0" data-tooltip="Água, líquida ou sólida, que cai da nuvem até a superfície: chuva, chuvisco, granizo ou neve.">precipitação</span> contínua associada a frentes.</p>
+            </figcaption></figure>
+
+            <figure class="p6"><img src="imagem/nuvem-stratus.jpg" alt="Nuvens Stratus: camada cinza baixa e uniforme" loading="lazy"><figcaption>
+              <h4>Stratus <span class="sigla">St</span></h4>
+              <p>Camada cinza, uniforme e de base baixa, parecida com um nevoeiro elevado. A diferença para o nevoeiro é que o stratus tem a base acima do solo; no nevoeiro, a nuvem toca o solo e a visibilidade fica abaixo de 1 km.</p>
+              <p class="indica"><strong>Indica:</strong> ar estável e úmido perto da superfície; pode haver chuvisco.</p>
+            </figcaption></figure>
+
+            <figure class="p7"><img src="imagem/nuvem-stratocumulus.jpg" alt="Nuvens Stratocumulus: conjunto de nuvens arredondadas com espaços de céu azul" loading="lazy"><figcaption>
+              <h4>Stratocumulus <span class="sigla">Sc</span></h4>
+              <p>Camada ou conjunto de nuvens baixas com elementos arredondados, brancas e cinzentas, com espaços de céu azul entre elas.</p>
+              <p class="indica"><strong>Indica:</strong> tempo estável com alguma umidade; raramente produz precipitação fraca.</p>
+            </figcaption></figure>
+
+            <figure class="p8"><img src="imagem/nuvem-nimbostratus.jpg" alt="Nuvens Nimbostratus: camada espessa e escura com chuva" loading="lazy"><figcaption>
+              <h4>Nimbostratus <span class="sigla">Ns</span></h4>
+              <p>Camada espessa e cinza-escura que cobre o céu por completo e encobre o Sol. Tem base baixa, mas seu topo atinge níveis médios, por isso algumas fontes a incluem entre as médias. <!-- CONFERIR: grupo do Nimbostratus no Atlas OMM --></p>
+              <p class="indica"><strong>Indica:</strong> chuva contínua, de intensidade fraca a moderada, em geral por horas e associada a frentes.</p>
+            </figcaption></figure>
+
+            <figure class="p9"><img src="imagem/nuvem-cumulus.jpg" alt="Nuvens Cumulus: nuvens isoladas de base plana em céu azul" loading="lazy"><figcaption>
+              <h4>Cumulus <span class="sigla">Cu</span></h4>
+              <p>Nuvens isoladas, de contornos nítidos, base plana e topo em forma de couve-flor, formadas quando o ar aquecido sobe em colunas. O <em>Cumulus humilis</em>, de pequeno desenvolvimento, é comum em tempo estável. O <em>Cumulus congestus</em>, de grande desenvolvimento, pode produzir pancadas de chuva e evoluir para Cumulonimbus.</p>
+              <p class="indica"><strong>Indica:</strong> tempo estável (<em>humilis</em>) ou instabilidade com possibilidade de pancadas de chuva (<em>congestus</em>).</p>
+            </figcaption></figure>
+
+            <figure class="p10"><img src="imagem/nuvem-cumulonimbus.jpg" alt="Nuvem Cumulonimbus com topo em forma de bigorna" loading="lazy"><figcaption>
+              <h4>Cumulonimbus <span class="sigla">Cb</span></h4>
+              <p>Nuvem de grande extensão vertical, com base baixa e topo que pode ultrapassar 12 km, em geral terminando em forma de bigorna. É a principal nuvem produtora de relâmpagos e trovões.</p>
+              <p class="indica"><strong>Indica:</strong> nível de periculosidade alto devido às correntes ascendentes e descendentes intensas, que podem causar chuva forte, granizo, rajadas de vento e, em alguns casos, tornados.</p>
+            </figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao3-small.jpg">
+          <img src="imagem/divisao3.jpg" alt="Cumulonimbus em desenvolvimento sobre uma paisagem aberta" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 4: CUMULONIMBUS -->
+      <section class="content-section" id="cumulonimbus">
+        <h2>Cumulonimbus: a nuvem de tempestade</h2>
+        <p>O Cumulonimbus se forma quando uma <span class="tip" tabindex="0" data-tooltip="Fluxo de ar que sobe dentro da nuvem e a mantém crescendo.">corrente ascendente</span> forte leva ar úmido a grandes altitudes. A base fica, em geral, abaixo de 2 km, e o topo, que pode passar de 12 km, chega a níveis em que a água congela. Ao atingir a <span class="tip" tabindex="0" data-tooltip="Limite entre a troposfera e a estratosfera. Acima dela, o ar deixa de esfriar com a altura, e as nuvens de tempestade não conseguem crescer muito mais.">tropopausa</span>, o topo se espalha horizontalmente e forma a bigorna.</p>
+        <p>Por reunir correntes ascendentes e descendentes intensas, o Cumulonimbus tem nível de periculosidade alto. Algumas feições visíveis ajudam a avaliar o estágio e a severidade da tempestade:</p>
+
+        <div class="cards">
+          <div class="card"><h4>Bigorna (<em>incus</em>)</h4><p>Topo achatado e espalhado, formado por cristais de gelo, que indica que a nuvem atingiu o limite de crescimento vertical.</p></div>
+          <div class="card"><h4>Mamma (<em>mammatus</em>)</h4><p>Bolsas na parte inferior da bigorna, resultado de ar descendente e turbulento. Costumam estar associadas a tempestades fortes, mas por si só não são perigosas.</p></div>
+          <div class="card"><h4>Nuvem-prateleira (<em>arcus</em>)</h4><p>Camada horizontal, baixa e densa, na frente da tempestade, formada pelo ar frio que desce e se espalha. Sua passagem costuma trazer rajadas de vento e chuva forte.</p></div>
+          <div class="card"><h4>Nuvem-parede</h4><p>Abaixamento localizado da base, sob a corrente ascendente. Quando apresenta rotação visível e persistente, pode anteceder a formação de um tornado.</p></div>
+        </div>
+
+        <p>Os fenômenos produzidos por essa nuvem, como tornados, granizo e vendavais, são o assunto de <a href="../site2/index.html" class="inline-link">Conheça os Eventos Severos</a>. Ao identificar um Cumulonimbus em desenvolvimento, consulte os alertas da Defesa Civil e do INMET.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/divisao4-small.jpg">
+          <img src="imagem/divisao4.jpg" alt="Bigorna de um Cumulonimbus iluminada pelo Sol" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 5: COMO IDENTIFICAR -->
+      <section class="content-section" id="identificar">
+        <h2>Como identificar nuvens</h2>
+
+        <h3>A partir do solo: três perguntas</h3>
+        <div class="cards">
+          <div class="card"><h4>1. Em que altura está?</h4><p>Fibras finas e brancas em grande altura indicam nuvens altas (cirro-). Nuvens de nível médio (alto-) mostram partes arredondadas ou uma camada uniforme. Nuvens baixas têm contornos grandes e detalhes de textura.</p></div>
+          <div class="card"><h4>2. Qual o formato?</h4><p>Filamentos sugerem cirro-; uma camada uniforme sugere strato-; massas isoladas com topo arredondado sugerem cumulo-.</p></div>
+          <div class="card"><h4>3. Há precipitação?</h4><p>Chuvisco aponta para o Stratus; chuva contínua, para o Nimbostratus; pancadas com relâmpagos, para o Cumulonimbus.</p></div>
+        </div>
+        <p>Combinando as respostas, o gênero costuma aparecer: uma nuvem alta e fibrosa é um Cirrus; uma camada baixa que produz chuva contínua é um Nimbostratus.</p>
+
+        <h3>Do espaço e do radar</h3>
+        <p>Satélites e radares observam a atmosfera de formas diferentes. O satélite vê o topo das nuvens; o radar meteorológico detecta principalmente a precipitação, porque as gotículas de uma nuvem são pequenas demais para refletir bem o sinal. <!-- CONFERIR: limitação do radar para gotículas --></p>
+
+        <div class="compare">
+          <div class="card">
+            <h4>Satélite (infravermelho)</h4>
+            <p>No canal <span class="tip" tabindex="0" data-tooltip="Radiação emitida pelos corpos conforme sua temperatura. O satélite a usa para medir o calor do topo das nuvens, de dia e de noite.">infravermelho</span>, o satélite mede a temperatura do topo da nuvem. Como a temperatura diminui com a altitude, topos mais frios indicam nuvens mais altas e, em geral, tempestades mais intensas. Nas imagens do INMET com realce de cores, as tonalidades destacam topos entre -70 °C e -15 °C.</p>
+            <p>Um Cumulonimbus aparece como uma mancha brilhante de topo muito frio. Em estudos brasileiros, topos abaixo de cerca de -55 °C são usados para identificar núcleos convectivos, as regiões mais intensas da tempestade. <!-- CONFERIR: limiar de -55 °C --></p>
+          </div>
+          <div class="card">
+            <h4>Radar meteorológico</h4>
+            <p>O radar emite pulsos e mede o que volta da chuva. A <span class="tip" tabindex="0" data-tooltip="Intensidade do sinal que o radar recebe de volta da chuva. Valores maiores indicam chuva mais intensa.">refletividade</span> indica a intensidade da precipitação e permite acompanhar seu deslocamento.</p>
+            <p>Um Cumulonimbus aparece como um núcleo de refletividade alta, com bordas bem definidas. Nuvens sem precipitação, como Cirrus e Cumulus humilis, em geral não aparecem no radar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section more-sites">
+        <h2>Continue explorando</h2>
+        <div class="header-nav">
+          <a href="../site1/index.html" class="nav-btn">Conheça a Meteorologia</a>
+          <a href="../site2/index.html" class="nav-btn">Conheça os Eventos Severos</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Conectando você à dinâmica do céu</p>
+      <div class="footer-links">
+        <a href="https://github.com/nicolasdesouza01" target="_blank" rel="noopener">Meu GitHub</a>
+      </div>
+      <div class="credits-box">
+        <p>Criado por <strong>Nicolas Souza</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
