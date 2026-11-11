@@ -1,170 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça a Meteorologia | Projeto Weather</title>
-    <!-- Vinculação da folha de estilos modularizada -->
-    <link rel="stylesheet" href="style/style.css">
-    <meta name="description" content="Aprenda meteorologia de forma simples e interativa: como o céu funciona, como se faz a previsão do tempo e o que move as tempestades.">
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça a Meteorologia | Projeto Weather</title>
+  <meta name="description" content="Como funciona a atmosfera, como a previsão do tempo é feita e o que significam os parâmetros e os avisos meteorológicos, com base científica e linguagem acessível.">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+</head>
 <body>
 
-    <!-- HEADER: Barra de navegação e título principal -->
-    <header class="site-header">
-        <div class="header-content">
-            <h1>Conheça a Meteorologia</h1>
-            <p class="header-subtitle">A ciência por trás das tempestades</p>
-        </div>
-        
-        <!-- Navegação inferior do header ocupando 50/50 simetricamente -->
-        <nav class="header-nav">
-            <a href="../site2/index.html" class="nav-btn">Conheça os Eventos Severos</a>
-            <a href="../site3/index.html" class="nav-btn">Conheça as Nuvens</a>
-        </nav>
-    </header>
-
-    <!-- WRAPPER GLOBAL PARA APLICAR A IMAGEM DE FUNDO NAS LATERAIS -->
-    <div class="page-wrapper">
-        <!-- BODY: Conteúdo principal conectado diretamente ao header -->
-        <main class="main-content">
-
-            <!-- Início: Conceito Geral para curiosos -->
-            <section class="content-section" id="conceito-geral">
-                <h2>O Que é a Meteorologia?</h2>
-                <p>
-                    A meteorologia não é apenas a previsão do tempo que passa na TV; é a ciência que estuda a atmosfera terrestre e como ela interage com o nosso planeta. Muito baseada em física e matemática, ela decodifica a energia do <span class="tooltip-trigger" tabindex="0" data-tooltip="A radiação solar é o motor térmico primário que movimenta toda a dinâmica e circulação da atmosfera terrestre.">Sol</span>, a pressão do ar e a umidade para entender o comportamento dinâmico do céu. 
-                </p>
-                <p>
-                    Para quem olha de fora, pode parecer um universo cheio de fórmulas complexas, mas o seu propósito no dia a dia é simples: antecipar os movimentos da natureza para proteger vidas e conectar você à grandiosidade do nosso ecossistema.
-                </p>
-            </section>
-
-            <!-- Imagem de transição / Respiro visual com suporte a imagem responsiva (Picture element) -->
-            <div class="parallax-divider">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="imagem/supercelulasmall.jpg">
-                    <img src="imagem/supercelula.jpg" alt="Imagem de supercelula no Canadá">
-                </picture>
-            </div>
-
-            <!-- Meio 1: Formação das Nuvens e Dinâmica Básica -->
-            <section class="content-section" id="formacao-nuvens">
-                <h2>Como o Céu Funciona?</h2>
-                <p>
-                    Tudo começa com o aquecimento solar. O sol aquece o solo, que por sua vez esquenta o ar logo acima dele. Como o <span class="tooltip-trigger" tabindex="0" data-tooltip="Parcelas de ar aquecido tornam-se menos densas que o ambiente ao redor, gerando empuxo para cima (convecção).">ar quente</span> é mais leve, ele começa a subir, carregando umidade invisível. 
-                </p>
-                <p>
-                    Conforme ganha altitude, a temperatura cai, fazendo essa umidade se condensar em gotículas visíveis. É aí que o espetáculo começa a ganhar forma, transformando vapor em imensas estruturas atmosféricas.
-                </p>
-            </section>
-
-            <!-- Imagem de transição com suporte a imagem responsiva -->
-            <div class="parallax-divider">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="imagem/imagem2small.jpg">
-                    <img src="imagem/imagem2.jpg" alt="Imagem de tempestade noturna">
-                </picture>
-            </div>
-
-            <!-- Meio 2: Previsões, Meteorologistas e Equipamentos -->
-            <section class="content-section" id="previsoes-equipamentos">
-                <h2>A Engenharia da Previsão</h2>
-                <p>
-                    Prever o tempo exige inteligência humana e tecnologia de ponta. É aqui que entram os profissionais da área e os centros de monitoramento espalhados pelo Brasil, como o <strong>INMET</strong> em âmbito nacional, o <strong>CGE</strong> em São Paulo e o <strong>SIMEPAR</strong> no Paraná, que analisam dados em tempo real para emitir alertas e compreender o comportamento regional da atmosfera.
-                </p>
-                <p>
-                    Além dos órgãos oficiais, o trabalho voluntário também é essencial: a <strong>PREVOTS</strong> é uma equipe de meteorologistas voluntários que registra eventos de tempo severo no Brasil.
-                </p>
-                <p>
-                    Para capturar dados detalhados da atmosfera em campo, utiliza-se um arsenal de alta precisão tecnológica:
-                </p>
-
-                <!-- Lista responsiva de equipamentos científicos -->
-                <div class="equipment-box">
-                    <ul class="equipment-list">
-                        <li><strong>Torre de Radar:</strong> Equipamento responsável por disparar ondas de rádio e detectar a presença e a intensidade de precipitações e estruturas convectivas em um raio de cerca de 200 km ou mais, conforme o modelo do radar.</li>
-                        <li><strong>Balão Meteorológico:</strong> Um balão de látex carrega uma radiossonda, pequeno equipamento que mede pressão, temperatura, umidade e vento durante a subida e transmite os dados por rádio.</li>
-                        <li><strong>Satélites Meteorológicos:</strong> Olhos no espaço que monitoram o deslocamento de grandes frentes frias, tempestades e o comportamento global dos ventos em tempo real.</li>
-                        <li><strong>Estações Meteorológicas:</strong> Conjuntos de sensores terrestres que registram de forma contínua a temperatura, direção do vento, índice pluviométrico e pressão local.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Imagem de transição com suporte a imagem responsiva -->
-            <div class="parallax-divider">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="imagem/imagemradarsmall.jpg">
-                    <img src="imagem/imagemradar.jpg" alt="imagem de radar Meteorológico">
-                </picture>
-            </div>
-
-            <!-- Meio 3: Aspectos Profissionais (A Ciência dos Dados em formato de lista) -->
-            <section class="content-section" id="termos-tecnicos">
-                <h2>A Ciência dos Dados</h2>
-                <p>
-                    Quando olhamos para tempestades severas, precisamos entender os motores invisíveis e os parâmetros físicos que moldam a atmosfera:
-                </p>
-
-                <!-- Caixa de lista formatada para os parâmetros da ciência de dados -->
-                <div class="equipment-box">
-                    <ul class="equipment-list">
-                        <li><strong>Temperatura:</strong> Grau de agitação térmica do ar, determinante para o gradiente de energia da troposfera.</li>
-                        <li><strong>Ponto de Orvalho:</strong> Temperatura na qual o vapor de água presente no ar se condensa em líquido; indica diretamente o teor de umidade disponível.</li>
-                        <li><strong>Pressão Atmosférica:</strong> O peso exercido pela coluna de ar sobre a superfície, fundamental para identificar centros de alta e baixa pressão.</li>
-                        <li><strong>CAPE:</strong> Energia Potencial Convectiva Disponível; o combustível em forma de calor e umidade acumulada que alimenta a ascensão rápida das tempestades.</li>
-                        <li><strong>Cisalhamento:</strong> Mudança abrupta na velocidade e/ou na direção do vento em diferentes níveis de altitude da atmosfera.</li>
-                        <li><strong>Helicidade:</strong> Medida da rotação tridimensional disponível no vento em camadas baixas, essencial para o desenvolvimento de mesociclones.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Imagem de transição com suporte a imagem responsiva -->
-            <div class="parallax-divider">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="imagem/tornadoimagemsmall.jpg">
-                    <img src="imagem/tornadoimagem.jpg" alt="Imagem de tornado tocando o solo">
-                </picture>
-            </div>
-
-            <!-- Meio 4: Marketing para o Site 2 (Eventos Severos) -->
-            <section class="content-section promo-section" id="promo-eventos">
-                <h2>A Dinâmica dos Extremos Atmosféricos</h2>
-                <p>
-                    Compreender a física por trás da atmosfera revela como o equilíbrio térmico pode dar lugar a fenômenos de grande impacto. Quando os índices de instabilidade se elevam, formam-se estruturas capazes de produzir ventanias intensas e rajadas destrutivas. <a href="../site2/index.html" class="inline-link">Conheça mais sobre os eventos severos</a> e descubra a mecânica por trás dos fenômenos mais extremos do planeta.
-                </p>
-            </section>
-
-            <!-- Meio 5: Marketing para o Site 3 (Tipos de Nuvens) -->
-            <section class="content-section promo-section" id="promo-nuvens">
-                <h2>Olhe Para Cima</h2>
-                <p>
-                    O céu está o tempo todo conversando com a gente através de formas, cores e texturas. Cada estrutura no horizonte carrega consigo uma história de como se formou e onde vai parar. Quer aprender a identificar a diferença entre um Cumulus inofensivo e uma Cumulonimbus carregada, direto da sua janela? <a href="../site3/index.html" class="inline-link">Conheça mais sobre as nuvens</a> e mude para sempre a forma como você enxerga o horizonte.
-                </p>
-            </section>
-
-        </main>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Conheça a Meteorologia</h1>
+      <p class="header-subtitle">A ciência por trás das tempestades</p>
     </div>
+    <nav class="header-nav">
+      <a href="../site2/index.html" class="nav-btn">Conheça os Eventos Severos</a>
+      <a href="../site3/index.html" class="nav-btn">Conheça as Nuvens</a>
+    </nav>
+    <nav class="toc" aria-label="Índice da página">
+      <a href="#o-que-e">O que é</a>
+      <a href="#como-funciona">Como o céu funciona</a>
+      <a href="#previsao">Previsão</a>
+      <a href="#dados">Ciência dos dados</a>
+      <a href="#alertas">Avisos</a>
+    </nav>
+  </header>
 
-    <!-- FOOTER: Conclusões, redes e créditos modulares  -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p>Conectando você à dinâmica do céu</p>
-            
-            <div class="footer-links">
-                <a href="https://github.com/nicolasdesouza01" target="_blank" rel="noopener">Meu GitHub</a>
-                <!-- <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener">Instagram</a> -->
-            </div>
+  <div class="page-wrapper">
+    <main class="main-content">
 
-            <!-- Bloco modular de créditos (fácil expansão futura para revisores) -->
-            <div class="credits-box">
-                <p>Criado por <strong>Nicolas Souza</strong></p>
-                <!-- Bloco reservado para futuros revisores técnicos -->
-                <!-- <p class="reviewer-credit">Revisão Científica: [Nome do Meteorologista]</p> -->
-            </div>
+      <!-- DIV 1: O QUE É A METEOROLOGIA -->
+      <section class="content-section" id="o-que-e">
+        <h2>O que é a meteorologia</h2>
+        <p>A meteorologia é a ciência que estuda a atmosfera e os fenômenos que nela ocorrem, como vento, nuvens, chuva e tempestades. Ela se apoia na física e na matemática: a mecânica dos fluidos e a <span class="tip" tabindex="0" data-tooltip="Ramo da física que estuda as trocas de calor e energia e sua relação com a pressão, a temperatura e o volume dos gases.">termodinâmica</span> explicam por que o ar se move, se aquece e se condensa.</p>
+        <p>A energia do <span class="tip" tabindex="0" data-tooltip="A radiação solar é o motor térmico primário que movimenta toda a dinâmica e circulação da atmosfera terrestre.">Sol</span> é o ponto de partida. Ela aquece a superfície de forma desigual, e as diferenças de temperatura geram diferenças de pressão que colocam o ar em movimento. A atmosfera troca calor e umidade com oceanos e continentes, e é essa dinâmica que define o tempo.</p>
+        <p>O objetivo prático é antecipar o comportamento da atmosfera para reduzir riscos: previsões de curto prazo e avisos de eventos severos permitem que a Defesa Civil e a população se preparem.</p>
+
+        <h3>Fenômenos de tamanhos diferentes</h3>
+        <p>Os fenômenos atmosféricos são classificados por escala: em geral, quanto maior o tamanho, maior a duração. Os limites variam entre autores; abaixo está a divisão de Orlanski (1975), uma das mais usadas. <!-- CONFERIR: limites e exemplos por autor; tornados e ciclones são classificados de formas diferentes em algumas referências --></p>
+        <div class="cards">
+          <div class="card"><h4>Microescala</h4><p class="meta">Menos de 2 km · minutos</p><p>Tornados, rajadas descendentes (<em>microbursts</em>) e turbilhões de poeira.</p></div>
+          <div class="card"><h4>Mesoescala</h4><p class="meta">De 2 km a cerca de 2.000 km · horas</p><p>Tempestades, <span class="tip" tabindex="0" data-tooltip="Tempestade com uma corrente de ar ascendente em rotação. É o tipo de tempestade que gera os tornados mais fortes.">supercélulas</span>, linhas de instabilidade e brisas marítimas.</p></div>
+          <div class="card"><h4>Escala sinótica</h4><p class="meta">Centenas a poucos milhares de km · dias</p><p>Frentes frias, ciclones extratropicais e grandes sistemas de alta e baixa pressão.</p></div>
         </div>
-    </footer>
+        <p>Tornados, vendavais e granizo nascem de tempestades de mesoescala, enquanto ciclones são sistemas de escala sinótica. Esses fenômenos são o assunto de <a href="../site2/index.html" class="inline-link">Conheça os Eventos Severos</a>.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/supercelulasmall.jpg">
+          <img src="imagem/supercelula.jpg" alt="Supercélula no Canadá" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 2: COMO O CÉU FUNCIONA -->
+      <section class="content-section" id="como-funciona">
+        <h2>Como o céu funciona</h2>
+        <p>A formação das nuvens e das tempestades começa perto do chão. O Sol aquece a superfície, que aquece o ar em contato com ela. Esse ar fica menos denso que o ambiente ao redor e sobe, em um processo chamado <span class="tip" tabindex="0" data-tooltip="Parcelas de ar aquecido ficam menos densas que o ambiente ao redor e ganham empuxo para cima.">convecção</span>.</p>
+        <ol class="steps">
+          <li>O ar aquecido perto do solo, menos denso, começa a subir.</li>
+          <li>Ao subir, o ar encontra pressão menor e se expande. A expansão o resfria em cerca de 10 °C por quilômetro, enquanto ele não está saturado. <!-- CONFERIR: taxa de resfriamento do ar seco (cerca de 9,8 °C/km) --></li>
+          <li>Quando a temperatura cai até o <span class="tip" tabindex="0" data-tooltip="Temperatura em que o ar fica saturado e o vapor de água começa a se condensar.">ponto de orvalho</span>, o vapor se condensa em gotículas ao redor dos <span class="tip" tabindex="0" data-tooltip="Partículas minúsculas suspensas no ar, como sal marinho, poeira e fuligem, que servem de base para a formação das gotículas.">núcleos de condensação</span>, formando a nuvem.</li>
+          <li>A condensação libera <span class="tip" tabindex="0" data-tooltip="Energia liberada quando o vapor de água se condensa. Ela aquece o ar da nuvem e ajuda a mantê-lo subindo.">calor latente</span>, que reaquece o ar e pode sustentar a subida. Se o ambiente for <span class="tip" tabindex="0" data-tooltip="Condição em que o ar que sobe continua subindo, favorecendo nuvens de grande desenvolvimento vertical.">instável</span>, a nuvem cresce na vertical e pode evoluir para uma tempestade.</li>
+        </ol>
+        <p>A convecção não é a única forma de o ar subir: o encontro entre massas de ar de temperaturas diferentes (as frentes) e o relevo também o forçam para cima. Os tipos de nuvem que resultam desse processo e como identificá-los estão em <a href="../site3/index.html" class="inline-link">Conheça as Nuvens</a>.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/imagem2small.jpg">
+          <img src="imagem/imagem2.jpg" alt="Tempestade durante a noite" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 3: A ENGENHARIA DA PREVISÃO -->
+      <section class="content-section" id="previsao">
+        <h2>A engenharia da previsão</h2>
+        <p>Prever o tempo é um trabalho em rede, que combina instituições, instrumentos e profissionais. No Brasil, vários centros analisam dados em tempo real para emitir avisos e compreender o comportamento regional da atmosfera:</p>
+        <div class="cards">
+          <div class="card"><h4>INMET</h4><p>Instituto Nacional de Meteorologia. Opera a rede nacional de estações e emite os avisos meteorológicos para todo o país.</p></div>
+          <div class="card"><h4>CGE</h4><p>Centro de Gerenciamento de Emergências Climáticas, da Prefeitura de São Paulo. Monitora o tempo e a chuva na capital paulista. <!-- CONFERIR: nome oficial e atribuições --></p></div>
+          <div class="card"><h4>SIMEPAR</h4><p>Sistema de Tecnologia e Monitoramento Ambiental do Paraná. Opera radares e estações no estado e emite alertas de tempestades.</p></div>
+          <div class="card"><h4>PREVOTS</h4><p>Plataforma de Registros e Rede Voluntária de Observadores de Tempestades Severas. Equipe de voluntários que registra eventos de tempo severo no Brasil desde 2018.</p></div>
+        </div>
+
+        <h3>Do dado ao aviso</h3>
+        <p>Antes de um aviso, existe uma cadeia de etapas:</p>
+        <ol class="steps">
+          <li><strong>Observação.</strong> Estações, balões, radares e satélites medem a atmosfera continuamente.</li>
+          <li><strong>Assimilação.</strong> As observações passam pela <span class="tip" tabindex="0" data-tooltip="Técnica que combina observações de vários instrumentos com o resultado anterior do modelo para obter o melhor retrato possível da atmosfera no momento inicial.">assimilação de dados</span>, que as combina para descrever o estado atual da atmosfera, ponto de partida dos modelos.</li>
+          <li><strong>Modelagem numérica.</strong> Supercomputadores executam <span class="tip" tabindex="0" data-tooltip="Programa que resolve as equações que governam a atmosfera para calcular como temperatura, vento e umidade evoluirão. No Brasil, centros como o CPTEC/INPE executam modelos.">modelos numéricos</span>, que resolvem as equações da física da atmosfera em uma grade tridimensional e projetam o estado futuro.</li>
+          <li><strong>Análise do meteorologista.</strong> O profissional compara modelos e observações, avalia as incertezas e interpreta o que o modelo não resolve, como a tempestade individual de menor escala.</li>
+          <li><strong>Aviso.</strong> Havendo risco, o INMET emite o aviso, e a Defesa Civil o transmite à população como alerta.</li>
+        </ol>
+
+        <h3>Instrumentos de observação</h3>
+        <p class="info">Clique no nome do equipamento para ver a foto e como ele funciona.</p>
+
+        <div class="gallery">
+          <input type="radio" name="equip" id="t1" checked>
+          <input type="radio" name="equip" id="t2">
+          <input type="radio" name="equip" id="t3">
+          <input type="radio" name="equip" id="t4">
+
+          <div class="g-list">
+            <label for="t1">Radar meteorológico <small>precipitação</small></label>
+            <label for="t2">Balão meteorológico <small>perfil vertical</small></label>
+            <label for="t3">Satélites meteorológicos <small>visão do espaço</small></label>
+            <label for="t4">Estações meteorológicas <small>superfície</small></label>
+          </div>
+
+          <div class="g-view">
+            <figure class="p1"><img src="imagem/engenharia-radar.jpg" alt="Torre de radar meteorológico com cúpula branca"><figcaption>
+              <h4>Radar meteorológico</h4>
+              <p>Emite pulsos de micro-ondas e mede a parte do sinal que retorna após atingir gotas de chuva, granizo ou neve. Com isso, estima a intensidade e a posição da precipitação e acompanha seu deslocamento, em um raio de cerca de 200 km ou mais, conforme o modelo. Pelo <span class="tip" tabindex="0" data-tooltip="Variação na frequência do sinal causada pelo movimento do alvo. No radar, indica se a chuva se aproxima ou se afasta.">efeito Doppler</span>, também mede a velocidade com que a chuva se aproxima ou se afasta, o que permite identificar rotação dentro das tempestades.</p>
+              <p class="indica"><strong>Mede:</strong> <span class="tip" tabindex="0" data-tooltip="Intensidade do sinal que o radar recebe de volta da chuva. Valores maiores indicam chuva mais intensa.">refletividade</span> e velocidade radial.</p>
+            </figcaption></figure>
+
+            <figure class="p2"><img src="imagem/engenharia-balao.jpg" alt="Lançamento de um balão meteorológico com radiossonda" loading="lazy"><figcaption>
+              <h4>Balão meteorológico</h4>
+              <p>Um balão de látex, inflado com hélio ou hidrogênio, carrega uma radiossonda: um conjunto de sensores que mede pressão, temperatura e umidade e, por GPS, a velocidade e a direção do vento durante a subida. Os dados seguem por rádio. O balão sobe até cerca de 30 km, onde estoura, e a sonda desce de paraquedas. Os lançamentos seguem horários internacionais padronizados, geralmente 00 e 12 <span class="tip" tabindex="0" data-tooltip="Tempo Universal Coordenado, referência de horário usada em meteorologia. O horário de Brasília corresponde a UTC menos 3 horas.">UTC</span>. <!-- CONFERIR: altitude típica e horários dos lançamentos --></p>
+              <p class="indica"><strong>Mede:</strong> o perfil vertical da atmosfera, base para calcular parâmetros como CAPE e cisalhamento, vistos adiante.</p>
+            </figcaption></figure>
+
+            <figure class="p3"><img src="imagem/engenharia-satelite.jpg" alt="Imagem de satélite com nuvens sobre a América do Sul" loading="lazy"><figcaption>
+              <h4>Satélites meteorológicos</h4>
+              <p>Observam a Terra do espaço em vários canais. Os geoestacionários, a cerca de 36 mil km de altitude, permanecem sobre o mesmo ponto do equador e geram imagens em intervalos curtos, o que permite acompanhar o desenvolvimento das tempestades. Os de órbita polar, a cerca de 800 km, passam sobre cada região algumas vezes ao dia, com mais detalhe. No <span class="tip" tabindex="0" data-tooltip="Radiação emitida pelos corpos conforme sua temperatura. O satélite a usa para medir o calor do topo das nuvens, de dia e de noite.">infravermelho</span>, medem a temperatura do topo das nuvens. Veja como interpretar as imagens em <a href="../site3/index.html#identificar" class="inline-link">Como identificar nuvens</a>.</p>
+              <p class="indica"><strong>Mede:</strong> temperatura do topo das nuvens, vapor de água e cobertura de nuvens.</p>
+            </figcaption></figure>
+
+            <figure class="p4"><img src="imagem/engenharia-estacao.jpg" alt="Estação meteorológica com sensores de vento, temperatura e chuva" loading="lazy"><figcaption>
+              <h4>Estações meteorológicas</h4>
+              <p>Conjuntos de sensores instalados no solo que registram, em intervalos regulares, temperatura e umidade do ar, pressão atmosférica, direção e velocidade do vento, precipitação e radiação solar. Seguem normas da <span class="tip" tabindex="0" data-tooltip="Organização Meteorológica Mundial, agência da ONU que padroniza a observação e a classificação do tempo no mundo.">OMM</span> para o local e a altura dos sensores: o vento, por exemplo, é medido a 10 m de altura. <!-- CONFERIR: normas de instalação --></p>
+              <p class="indica"><strong>Mede:</strong> variáveis de superfície, que formam as séries históricas usadas no estudo do tempo e do clima.</p>
+            </figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/imagemradarsmall.jpg">
+          <img src="imagem/imagemradar.jpg" alt="Radar meteorológico" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 4: A CIÊNCIA DOS DADOS -->
+      <section class="content-section" id="dados">
+        <h2>A ciência dos dados</h2>
+        <p>As observações viram números, e alguns parâmetros resumem o quanto a atmosfera favorece tempestades. Cada um mede uma característica diferente do ambiente.</p>
+        <p class="info">Clique em cada parâmetro para ver o que ele mede, a unidade e por que importa.</p>
+
+        <div class="acc">
+          <details>
+            <summary>Temperatura <span class="unit">°C</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> o grau de agitação das moléculas do ar, que expressa o quão quente ou frio ele está.</p>
+              <p><strong>Por que importa:</strong> o que define a facilidade com que o ar sobe é a variação da temperatura com a altura, o <span class="tip" tabindex="0" data-tooltip="Taxa de variação da temperatura com a altitude. Pode ser obtida a partir dos dados do balão meteorológico.">gradiente vertical</span>. Se o ar ao redor esfria mais depressa com a altura do que a parcela que sobe, ela continua subindo. As referências são de cerca de 6 °C por km para o ar úmido e cerca de 10 °C por km para o ar seco.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Ponto de orvalho <span class="unit">°C</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> a temperatura em que o ar, resfriado a pressão constante, atinge a saturação e o vapor começa a se condensar.</p>
+              <p><strong>Por que importa:</strong> indica a quantidade de vapor de água disponível. Quanto mais alto, mais úmido o ar e maior o potencial de chuva forte. A diferença entre a temperatura e o ponto de orvalho mostra quão perto o ar está de formar nuvens.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Pressão atmosférica <span class="unit">hPa</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> o peso da coluna de ar acima de um ponto. Ao nível do mar, o valor médio é de cerca de 1013 hectopascais.</p>
+              <p><strong>Por que importa:</strong> centros de baixa pressão favorecem a subida do ar e a formação de nuvens e chuva, enquanto centros de alta pressão favorecem o ar descendente e o tempo mais estável.</p>
+            </div>
+          </details>
+          <details>
+            <summary>CAPE <span class="unit">J/kg</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> a Energia Potencial Convectiva Disponível, ou seja, a energia por quilograma de ar que pode acelerar a parcela em ascensão pelo empuxo.</p>
+              <p><strong>Por que importa:</strong> quanto maior o CAPE, mais fortes tendem a ser as correntes ascendentes. Valores abaixo de 1000 J/kg costumam ser considerados baixos, entre 1000 e 2500 moderados e acima de 2500 altos. O CAPE sozinho não gera uma tempestade: é preciso um mecanismo que levante o ar. <!-- CONFERIR: faixas de CAPE variam conforme o autor --></p>
+            </div>
+          </details>
+          <details>
+            <summary>Cisalhamento <span class="unit">m/s</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> a variação do vento (velocidade e/ou direção) com a altura, em geral calculada entre a superfície e 6 km.</p>
+              <p><strong>Por que importa:</strong> organiza a tempestade, separando a corrente ascendente da descendente, o que permite que ela dure mais. Valores acima de cerca de 20 m/s favorecem a formação de <span class="tip" tabindex="0" data-tooltip="Tempestade com uma corrente de ar ascendente em rotação. É o tipo de tempestade que gera os tornados mais fortes.">supercélulas</span>. <!-- CONFERIR: limiar de cisalhamento --></p>
+            </div>
+          </details>
+          <details>
+            <summary>Helicidade <span class="unit">m²/s²</span></summary>
+            <div class="acc-body">
+              <p><strong>O que mede:</strong> o potencial de rotação do ar que alimenta a tempestade, calculado em relação ao movimento dela (helicidade relativa à tempestade), em geral nas camadas de 0 a 1 km e de 0 a 3 km.</p>
+              <p><strong>Por que importa:</strong> valores altos indicam ambiente favorável à rotação da corrente ascendente, o que forma o <span class="tip" tabindex="0" data-tooltip="Coluna de ar em rotação dentro da tempestade, com alguns quilômetros de largura.">mesociclone</span> e aumenta a chance de tornados.</p>
+            </div>
+          </details>
+        </div>
+
+        <h3>Os ingredientes de uma tempestade</h3>
+        <p>Tempestades fortes dependem da combinação de quatro ingredientes. Cada parâmetro acima ajuda a medir um deles, e a falta de qualquer um limita o que a tempestade pode se tornar:</p>
+        <div class="ing">
+          <div class="ing-card">
+            <h4>1. Umidade</h4>
+            <p><strong>O que é:</strong> vapor de água na camada mais baixa da atmosfera. É a fonte de energia da tempestade: ao se condensar, o vapor libera calor latente, que mantém a corrente ascendente.</p>
+            <p><strong>Como é medida:</strong> pelo ponto de orvalho, em estações e balões. Quanto mais próximo da temperatura do ar, mais úmido o ambiente e mais baixa a base das nuvens.</p>
+            <p><strong>Sem ele:</strong> o ar sobe apenas enquanto é forçado, e as nuvens ficam rasas.</p>
+          </div>
+          <div class="ing-card">
+            <h4>3. Mecanismo de levantamento</h4>
+            <p><strong>O que é:</strong> o processo que força o ar a subir até o nível em que ele passa a subir sozinho. Pode ser o aquecimento do solo, uma frente, uma linha de instabilidade, a brisa marítima ou o relevo.</p>
+            <p><strong>Como é identificado:</strong> em mapas de pressão e de frentes e em imagens de satélite e radar.</p>
+            <p><strong>Sem ele:</strong> mesmo com muito CAPE, o ar pode ficar preso sob uma camada estável, a <span class="tip" tabindex="0" data-tooltip="Em inglês, convective inhibition (CIN). Energia que o ar precisa vencer para atingir o nível em que passa a subir sozinho. Valores altos funcionam como uma tampa sobre a tempestade.">inibição convectiva</span>, e a tempestade não se forma.</p>
+          </div>
+          <div class="ing-card">
+            <h4>4. Cisalhamento do vento</h4>
+            <p><strong>O que é:</strong> a variação do vento com a altura, em velocidade e/ou direção.</p>
+            <p><strong>Como é medido:</strong> pela diferença entre o vento da superfície e o de 6 km, em m/s, e pela helicidade, que indica a rotação disponível.</p>
+            <p><strong>Sem ele:</strong> a chuva da corrente descendente cai sobre a própria corrente ascendente e a enfraquece, e a tempestade dura, em geral, menos de uma hora. Com cerca de 10 a 20 m/s, as tempestades se organizam em várias células e, acima de cerca de 20 m/s, surgem as supercélulas. <!-- CONFERIR: limiares de cisalhamento --></p>
+          </div>
+        </div>
+        <p>Ambientes que reúnem os quatro, como um dia úmido com CAPE alto, cisalhamento forte e uma frente se aproximando, são os que favorecem tempestades severas, tema de <a href="../site2/index.html" class="inline-link">Conheça os Eventos Severos</a>.</p>
+      </section>
+
+      <div class="divider">
+        <picture>
+          <source media="(max-width: 768px)" srcset="imagem/tornadoimagemsmall.jpg">
+          <img src="imagem/tornadoimagem.jpg" alt="Tornado tocando o solo" loading="lazy">
+        </picture>
+      </div>
+
+      <!-- DIV 5: COMO LER UM AVISO -->
+      <section class="content-section" id="alertas">
+        <h2>Como ler um aviso meteorológico</h2>
+        <p>Há uma diferença entre aviso e alerta: o <strong>aviso</strong> é emitido pelo INMET, e o <strong>alerta</strong> é a mensagem que a Defesa Civil envia à população, a partir da análise dos avisos e de fatores locais, como o estado dos rios e das encostas e as áreas de risco.</p>
+        <p>Os avisos do INMET usam três cores, que indicam o nível de severidade:</p>
+        <div class="cards">
+          <div class="card card-amarelo"><span class="chip amarelo">Amarelo</span><h4>Perigo potencial</h4><p>Situação meteorológica potencialmente perigosa. Fique atento e evite se expor a riscos desnecessários.</p></div>
+          <div class="card card-laranja"><span class="chip laranja">Laranja</span><h4>Perigo</h4><p>Situação perigosa. Mantenha-se vigilante, informe-se regularmente sobre a previsão e siga as orientações das autoridades.</p></div>
+          <div class="card card-vermelho"><span class="chip vermelho">Vermelho</span><h4>Grande perigo</h4><p>Previsão de fenômenos de intensidade excepcional, com grande probabilidade de danos e riscos à integridade física ou à vida.</p></div>
+        </div>
+        <p>Os critérios mudam conforme o fenômeno. Em avisos de tempestade, por exemplo, o amarelo cobre chuva de 20 a 30 <span class="tip" tabindex="0" data-tooltip="Milímetros de chuva por hora. Cada milímetro equivale a 1 litro de água em 1 metro quadrado.">mm/h</span> e ventos de 40 a 60 km/h, enquanto o vermelho é usado para ventos acima de 100 km/h ou chuva acima de 60 mm/h ou 100 mm por dia. <!-- CONFERIR: critérios atuais no portal do INMET --></p>
+        <p class="info">Para receber alertas da Defesa Civil, envie seu CEP por SMS para 40199. As orientações de segurança para cada evento estão em <a href="../site2/index.html#protecao" class="inline-link">Como se proteger</a>.</p>
+      </section>
+
+      <!-- CONTINUE EXPLORANDO -->
+      <section class="content-section more-sites" id="continue">
+        <h2>Continue explorando</h2>
+        <div class="explore">
+          <article class="explore-card">
+            <h3>Conheça os Eventos Severos</h3>
+            <p>Tornados, vendavais, granizo e ciclones: como se formam, por que também acontecem no Brasil e como se proteger.</p>
+            <a href="../site2/index.html" class="btn">Explorar eventos severos</a>
+          </article>
+          <article class="explore-card">
+            <h3>Conheça as Nuvens</h3>
+            <p>Os dez gêneros de nuvens, como interpretar o nome de cada um e como identificá-los do solo, do satélite e do radar.</p>
+            <a href="../site3/index.html" class="btn">Explorar as nuvens</a>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Conectando você à dinâmica do céu</p>
+      <div class="footer-links">
+        <a href="https://github.com/nicolasdesouza01" target="_blank" rel="noopener">Meu GitHub</a>
+      </div>
+      <div class="credits-box">
+        <p>Criado por <strong>Nicolas Souza</strong></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

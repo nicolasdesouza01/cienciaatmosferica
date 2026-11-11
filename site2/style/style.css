@@ -187,7 +187,7 @@ body {
   align-items: start;
   margin-top: 1rem;
 }
-.gallery input { position: fixed; opacity: 0; pointer-events: none; top: 0; left: 0; }
+.gallery input { position: fixed; opacity: 0; pointer-events: none; top: 0; left: 0;}
 
 .g-list { display: flex; flex-direction: column; gap: 0.5rem; }
 .g-list label {
